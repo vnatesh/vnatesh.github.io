@@ -124,11 +124,10 @@
                 <div class="col-lg-6 portfolio-item">
                         <div class="modal-body">
         <h4><a href="https://github.com/vnatesh/Packet-StreamSQL">Packet Stream-SQL</a></h4>
-                            <p>During the summer of 2018, I conducted an independent study to accelerate stream processing performance to terabit per second speeds using a virtual programmable switch. In this system, a packet contains a tuple payload with several named fields and corresponding values. Packets are continuously injected into a Mininet emulator where the virtual router filters packets based on a user query and forwards the results to a virtual host. I successfully implemented several SQL-like streaming primitives including filter (WHERE), project (SELECT), join (INNER JOIN), and aggregate operators (GROUPBY). To the right is a demo of a simple JOIN operation between two streams. Host 1 sends a stream of ad clicks while Host 2 sends a stream of ad impressions. The two streams are efficiently joined by the ad identifier at the virtual switch and the query result is sent to Host 3.
-                                            
-                                        SELECT adId, impression_time, click_time
-                                        FROM impressions i
-                                        INNER JOIN clicks c ON i.adId = c.adId </p>
+                            <p>During the summer of 2018, I conducted an independent study to accelerate stream processing performance to terabit per second speeds using a virtual programmable switch. In this system, a packet contains a tuple payload with several named fields and corresponding values. Packets are continuously injected into a Mininet emulator where the virtual router filters packets based on a user query and forwards the results to a virtual host. I successfully implemented several SQL-like streaming primitives including filter (WHERE), project (SELECT), join (INNER JOIN), and aggregate operators (GROUPBY). To the right is a demo of a simple JOIN operation between two streams. Host 1 sends a stream of ad clicks while Host 2 sends a stream of ad impressions. The two streams are efficiently joined on the "adId" field at the virtual switch and the query result is sent to Host 3. </p>
+                            <p> SELECT adId, impression_time, click_time
+                                FROM impressions i
+                                INNER JOIN clicks c ON i.adId = c.adId </p>
                         </div>
                 </div>
 
