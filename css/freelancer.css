@@ -19,7 +19,7 @@ h6 {
 }
 
 hr.star-light,
-hr.star-dark {
+hr.hey {
   max-width: 15rem;
   padding: 0;
   text-align: center;
@@ -32,7 +32,7 @@ hr.star-dark {
 }
 
 hr.star-light:after,
-hr.star-dark:after {
+hr.hey:after {
   position: relative;
   top: -.8em;
   display: inline-block;
@@ -51,11 +51,11 @@ hr.star-light:after {
   background-color: #18BC9C;
 }
 
-hr.star-dark {
+hr.hey {
   border-color: #2C3E50;
 }
 
-hr.star-dark:after {
+hr.hey:after {
   color: #2C3E50;
   background-color: white;
 }
