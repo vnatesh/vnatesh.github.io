@@ -140,7 +140,6 @@
             </div>
 
 
-
             <div class="row">
                 <div class="col-sm-4 portfolio-item">
                     <a href="https://github.com/vnatesh/SDN-Controller" class="portfolio-link" data-toggle="modal">
@@ -179,6 +178,27 @@
                         </div>
                 </div>
             </div>
+
+
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="https://github.com/vnatesh/Proxy-Server" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <!-- <i class="fa fa-search-plus fa-3x"></i> -->
+                            </div>
+                        </div>
+                        <img src="img/proxyserver.png" id="research_pic" class="img-responsive" width="380" height="200" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-6 portfolio-item">
+                        <div class="modal-body">
+                            <h4><a href="https://github.com/vnatesh/Proxy-Server">Proxy Server</a></h4>
+                            <p>I built a lightweight multi-threaded web proxy server in C. The server can handle up to 100 asynchronous requests. Each client creates a TCP connection to the server and transmits a URL string. The server continuously listens for new clients and launches each one on a separate posix thread (pThread). Each time a new URL is queried by a client, the corresponding HTML document is cached at the server. The next time this same url is queried for, the program simply returns the corresponding HTML from the cache. This eases strain on the network by reducing the number of external requests made by the server. A separate thread performs cache validity to update webpages that may have changed.  </p>
+                        </div>
+                </div>
+            </div>
+
 
 
         </div>
