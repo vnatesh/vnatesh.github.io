@@ -92,17 +92,12 @@
                 <div class="col-rg-6 portfolio-item">
                         <div class="modal-body">
         <h4><a href="https://github.com/vnatesh/sluice">A Network-wide Programming Model</a></h4>
-                            <p>
-
-
-                           .</i>.</p>
+                            <p> I am working on a high-level language for expressing and dispatching programs to run on a programmable network. Currently, network operators are required to use several complex SDKs to program each device in a programmable network. This makes it cumbersome to create whole-network programs. The goal of this project is to abstract away device-specific information and provide the operator with a simple language to create network programs. The compiler translates this high-level language into device-specific code (usually P4 and C) based on programmer annotations as well as the hardware constraints of each device. The image above displays a whole-network program containing protocols that can be run on different devices.</i>.</p>
                         </div>
                 </div>
                 
             </div>
-
-<!--              While greater control over a networking device allows for better application performance and visibility into the network, it is still difficult to program the network as a whole. In the current state, network operators are required to program each individual device using a language such as P4 or Micro-C in order to express a network-wide computation. For my master’s thesis, I have been working on a programming model, inspired by stream processing, that takes a high-level specification of a network program and compiles it into runnable code (in P4 or C) that can be launched on the programmable devices of network. In this model, a network-wide program consists of a directed acyclic graph (DAG) where each node represents some high-level code snippet to be executed on packets arriving at that node and edges represent the order in which to execute the nodes. This thesis endeavors to make networks considerably easier to program
- -->            <div class="row">
+            <div class="row">
                 <div class="col-sm-4 portfolio-item">
                     <a href="https://github.com/vnatesh/Packet-StreamSQL" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -118,13 +113,12 @@
                 <div class="col-lg-6 portfolio-item">
                         <div class="modal-body">
         <h4><a href="https://github.com/vnatesh/Packet-StreamSQL">Packet Stream-SQL</a></h4>
-                            <p> </p>
+                            <p> During the summer of 2018, I developed a system to run SQL-like queries on streams of packets entering a virutal programmable switch. Each stream represents an unbounded table. In addition to standard eth/ip/tcp headers, each packet contains a header representing a row of data made up of fields (column name) and their values. An operator query is run on the virtual switch as a P4-16 program which processes the packet streams and returns the query result. On the left is a demo of a simple JOIN operation between two streams. Host 1 sends a stream of ad impressions while Host 2 sends a stream of ad clicks. The two streams are efficiently joined on the "adId" field at the virtual switch and the query result is sent to Host 3. The MySQL query corresponding to this example is shown below. </p>
                             <p align="left"> SELECT adId, impression_time, click_time <br />
                                 FROM impressions i <br />
                                 INNER JOIN clicks c ON i.adId = c.adId </p>
                         </div>
-<!--                         During the summer of 2018, I conducted an independent study to accelerate stream processing performance to terabit per second speeds using a virtual programmable switch. In this system, a packet contains a tuple payload with several named fields and corresponding values. Packets are continuously injected into a Mininet emulator where the virtual router filters packets based on a user query and forwards the results to a virtual host. I successfully implemented several SQL-like streaming primitives including filter (WHERE), project (SELECT), join (INNER JOIN), and aggregate operators (GROUPBY). On the left is a demo of a simple JOIN operation between two streams. Host 1 sends a stream of ad impressions while Host 2 sends a stream of ad clicks. The two streams are efficiently joined on the "adId" field at the virtual switch and the query result is sent to Host 3. The MySQL query corresponding to this example is shown below.
- -->                </div>
+                </div>
 
             </div>
         </div>
