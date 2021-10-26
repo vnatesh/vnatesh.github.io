@@ -55,7 +55,7 @@
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#research">Research</a>
             </li>
             <li class="page-scroll">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#projects">Projects</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Past Projects">Past Projects</a>
             </li>
             <li class="page-scroll">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#publications">Publications</a>
@@ -103,7 +103,9 @@
                                 <!-- <i class="fa fa-search-plus fa-3x"></i> -->
                             </div>
                         </div>
-                        <img src="img/figure_constant_bw.png" id="cake_bw" class="center" width="800" alt="">
+<!--                         <img src="img/figure_constant_bw.png" id="cake_bw" class="center" width="800" alt="">
+ -->
+                        <img src="img/figure_constant_bw.png" id="cake_bw" class="img-responsive" width="380" height="300" alt="">
                     </a>
                 </div>
                 <div class="col-rg-6 portfolio-item">
@@ -128,13 +130,18 @@
                                 <!-- <i class="fa fa-search-plus fa-3x"></i> -->
                             </div>
                         </div>
-                        <img src="img/streaming_example.png" id="research_pic" class="center" width="800" alt="">
+                        <img src="img/streaming_example.png" id="research_pic" class="center" width="800" alt=""> 
                     </a>
                 </div>
                 <div class="col-rg-6 portfolio-item">
                         <div class="modal-body">
         <h4><a href="https://github.com/sluice-project/sluice">A Network-wide Programming Model</a></h4>
-                            <p> I designed Sluice, a high-level language for expressing and dispatching programs to run on a programmable network. Currently, network operators are required to use several complex SDKs to program each device in a programmable network. This makes it cumbersome to create whole-network programs. The goal of this project is to abstract away device-specific information and provide the operator with a simple language to create network programs. The compiler translates this high-level language into device-specific code (p4) based on programmer annotations as well as the hardware constraints of each device. The image above displays a Sluice program implementing an inner join over streams of data in a simple 2-switch network.</i>.</p>
+                            <p> This paper presents Sluice, a programming model that takes a network-wide specification of the data plane and compiles it into runnable code that can be launched directly on the programmable devices of a network. In contrast to prior network-wide programming models like SNAP and Maple that were focused on specific tasks (e.g., routing and security policies), Sluice aims to be more generic, but potentially at the cost of operator effort in specifying code placement. Sluice endows network operators with the ability to design and deploy large network programs for various functions such as scheduling, measurement, and in-network applications. The benefits of Sluice can be summarized as follows: (1) Sluice provides the same functionality as a per-device language like P4 but makes it easier to program the data plane of an entire network by abstracting device-specific architectural details like stateful ALUs, pipelines, etc., and (2) Sluice automatically reduces the amount of boilerplate code needed to write data plane functionality. For instance, the 8 line traffic matrix Sluice program we demonstrate translates into over 40 lines of P4 (excluding header/metadata/parser definitions and ipv4 forwarding P4 code). We demonstrate Sluice’s functionality and ease of use via two examples: traffic matrix generation for network analysis and a streaming join-filter operation. Sluice is open-source and available at https://github.com/sluice-project/sluice.
+
+
+
+
+                            I designed Sluice, a high-level language for expressing and dispatching programs to run on a programmable network. Currently, network operators are required to use several complex SDKs to program each device in a programmable network. This makes it cumbersome to create whole-network programs. The goal of this project is to abstract away device-specific information and provide the operator with a simple language to create network programs. The compiler translates this high-level language into device-specific code (p4) based on programmer annotations as well as the hardware constraints of each device. The image above displays a Sluice program implementing an inner join over streams of data in a simple 2-switch network.</i>.</p>
                         </div>
                 </div>
             </div>
@@ -180,13 +187,13 @@
 
 
 
-    <!--Projects -->
-    <section class="success" id="projects">
+    <!--Past Projects -->
+    <section class="success" id="Past Projects">
         <div class="container">
 
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Projects</h2>
+                    <h2>Past Projects</h2>
                     <hr class="star-dark mb-5">
                 </div>
             </div>
@@ -289,6 +296,9 @@
                     <hr class="star-dark mb-5">
                 </div>
             </div>
+
+
+
             <div class="row">
                 <div class="col-sm-4 portfolio-item">
                     <a href="https://doi.org/10.1145/3342280.3342343" class="portfolio-link" data-toggle="modal">
